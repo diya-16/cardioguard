@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  cardioguard:
+    build: .
+    container_name: cardioguard_app
+    ports:
+      - "8501:8501"
+    volumes:
+      # Persist SQLite history DB and outputs across restarts
+      - ./data:/app/data
+      - ./outputs:/app/outputs
+    environment:
+      - STREAMLIT_SERVER_HEADLESS=true
+      - STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
+    restart: unless-stopped

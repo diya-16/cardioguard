@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# macOS
+.DS_Store
+__MACOSX/
+
+# Environment
+.env
+.venv/
+venv/
+
+# Data & outputs (large files — keep gitkeep placeholders)
+data/history.db
+outputs/*.png
+
+# Jupyter
+.ipynb_checkpoints/

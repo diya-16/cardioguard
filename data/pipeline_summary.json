@@ -1,0 +1,60 @@
+{
+  "best_model": "Gradient Boosting",
+  "features": [
+    "age",
+    "gender",
+    "height",
+    "weight",
+    "ap_hi",
+    "ap_lo",
+    "cholesterol",
+    "gluc",
+    "smoke",
+    "alco",
+    "active",
+    "bmi",
+    "pulse_pressure",
+    "map",
+    "hypertension",
+    "obese",
+    "age_group"
+  ],
+  "metrics": {
+    "Logistic Regression": {
+      "accuracy": 0.7293,
+      "f1_score": 0.7037,
+      "roc_auc": 0.7935,
+      "cv_auc_mean": 0.7932,
+      "cv_auc_std": 0.003
+    },
+    "K-Nearest Neighbors": {
+      "accuracy": 0.7226,
+      "f1_score": 0.7129,
+      "roc_auc": 0.78,
+      "cv_auc_mean": 0.78,
+      "cv_auc_std": 0.0
+    },
+    "Random Forest": {
+      "accuracy": 0.7363,
+      "f1_score": 0.7198,
+      "roc_auc": 0.801,
+      "cv_auc_mean": 0.7996,
+      "cv_auc_std": 0.0016
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.7361,
+      "f1_score": 0.7208,
+      "roc_auc": 0.802,
+      "cv_auc_mean": 0.802,
+      "cv_auc_std": 0.0
+    },
+    "Linear SVM": {
+      "accuracy": 0.7268,
+      "f1_score": 0.6989,
+      "roc_auc": 0.7928,
+      "cv_auc_mean": 0.7928,
+      "cv_auc_std": 0.0
+    }
+  },
+  "classification_report": "              precision    recall  f1-score   support\n\n  No Disease       0.72      0.78      0.75      6929\n     Disease       0.76      0.69      0.72      6785\n\n    accuracy                           0.74     13714\n   macro avg       0.74      0.74      0.74     13714\nweighted avg       0.74      0.74      0.74     13714\n"
+}

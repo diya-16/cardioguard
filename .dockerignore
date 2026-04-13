@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+.env
+.git
+.gitignore
+__MACOSX/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
